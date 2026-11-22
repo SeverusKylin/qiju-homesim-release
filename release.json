@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "version": "0.3.0",
+  "channel": "customer-preview",
+  "package": "qiju-homesim-customer-v0.3.0.zip",
+  "runtime": "Node.js >= 22.12",
+  "sourceCommit": "f9e3e95",
+  "secretsIncluded": false,
+  "friend": {
+    "optional": true,
+    "protocol": ["data_search", "data_get", "memory_search", "memory_get"]
+  },
+  "releaseUrl": "https://github.com/SeverusKylin/qiju-homesim-release/releases/tag/v0.3.0"
+}

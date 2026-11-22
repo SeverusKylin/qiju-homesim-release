@@ -1,0 +1,9 @@
+栖居 HomeSim 客户体验包
+
+1. 从公开仓库安装时，Windows 运行 Install-HomeSim.cmd，macOS/Linux 运行 install.sh。
+2. 如果已经从 Releases 下载 zip，直接解压即可，不需要重复安装。
+3. 解压后 Windows 运行 Open-HomeSim.cmd，macOS/Linux 运行 bash start-home-sim.sh。
+4. 浏览器打开 http://127.0.0.1:5173/。
+5. 模型 API 和 Friend 配置由客户自己填写，发行包不包含密钥。
+
+运行要求 Node.js 22.12 或更高版本。完整说明见 Releases 中的 README.md。
