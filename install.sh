@@ -3,10 +3,10 @@ set -eu
 
 repo='SeverusKylin/qiju-homesim-release'
 version="${QIJU_HOMESIM_VERSION:-v0.3.0}"
-asset="qiju-homesim-customer-${version#v}.zip"
+asset="qiju-homesim-customer-${version}.zip"
 install_dir="${QIJU_HOMESIM_DIR:-$(pwd)/qiju-homesim}"
 work_dir="$(mktemp -d)"
-base_url="https://github.com/${repo}/releases/download/${version}"
+base_url="${QIJU_HOMESIM_BASE_URL:-https://github.com/${repo}/releases/download/${version}}"
 trap 'rm -rf "$work_dir"' EXIT
 
 curl -fL --retry 3 -o "$work_dir/$asset" "$base_url/$asset"
